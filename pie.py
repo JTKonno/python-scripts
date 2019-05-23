@@ -1,11 +1,9 @@
 # string reversal
 def reverse(word):
-    x = 0
-    y = ''
-    while x < len(word):
-        y = word[x:x+1] + y
-        x += 1
-    return y
+    x = ''
+    for element in word:
+        x = element + x
+    return x
 
 result = reverse('henlo')
 print(result)
