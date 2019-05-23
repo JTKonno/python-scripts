@@ -20,3 +20,13 @@ def oddeven(num):
     
 check = oddeven([15,20,25])
 print(check)
+
+# simple number switch without using lists/arrays
+def numswitch(num1,num2):
+    num1 = num1 + num2
+    num2 = num1 - num2
+    num1 = num1 - num2
+    return(num1,num2)
+
+swtich = numswitch(13,69)
+print (swtich)
